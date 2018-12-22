@@ -98,6 +98,7 @@ class User extends ClassStructure
         $properties->meta = Meta::schema();
         $ownerSchema->type = 'object';
         $ownerSchema->additionalProperties = false;
+        $ownerSchema->schema = "http://json-schema.org/draft-04/schema#";
         $ownerSchema->title = "Resume Schema";
     }
 
